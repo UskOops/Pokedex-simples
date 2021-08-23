@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <style>
+        .pokemom{
+            width: 500px;
+            height: 500px;
+            background-color: #eee;
+            margin: 0 auto;
+            background-image: url("001.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .nomepokemom{
+            width: 100px;
+            height: 30px;
+            background: rgb(213, 117, 117);
+        }
+        .nomenum{
+            width: 100px;
+            height: 30px;
+            background: rgb(177, 177, 111);
+        }
+        .display{
+            display: flex;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="pokemom"></div>
+    <div class="bt">
+        <div class="display">
+       <div class="nomepokemom">Nome</div>
+       <div class="nomeum">número</div>
+       </div>
+        <input type="text" class="pesquisa" placeholder="Nome ou número"><button onclick="pesquisar()">pesquisar</button>
+       <button onclick="left()">=></button>
+       <button onclick="right()">=></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
